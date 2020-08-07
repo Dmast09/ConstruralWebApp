@@ -7,6 +7,13 @@ use MongoDB;
 class ProjectController extends Controller
 {
     //
+    public function home(){
+        $collection = (new MongoDB\Client)->Construral->projects;
+        $project = $collection->find([],[
+            'limit' => 3
+        ]);
+        return view('home', ['project' => $project]);
+    }
 
     public function Index(){
         $collection = (new MongoDB\Client)->Construral->projects;

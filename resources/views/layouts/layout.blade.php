@@ -21,13 +21,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="index">Projects <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/admin/projects/index">Projects <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/aboutus">About us <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/admin/workers/index">Workers <span class="sr-only">(current)</span></a>
                 </li>
 
                 </ul>

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.layout')
 
 @section('content')
 <!-- <div class="container">
@@ -27,7 +27,7 @@
                     <div class="carousel-inner">
 
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="images/casa 1.jpg" alt="First slide" width="620" height="480">
+                            <img class="d-block w-100" src="images/house.jpg" alt="First slide" width="620" height="480">
                         </div>
 
                         <div class="carousel-item">
@@ -48,7 +48,7 @@
                     <div class="d-flex justify-content-between" >
                         <h3 class="text-center">Recent Works</h3>  
                         
-                        <a href="/Admin/Projects">
+                        <a href="/admin/projects/index">
                             <h3>List of Projects</h3>
                         </a>
                     </div>
@@ -57,14 +57,14 @@
             <!-- Aqui estan los tres card deck que estan en el home page -->
             <div class="container">
                 <div class="row">
-                @foreach($projects as $project)
+                @foreach($project as $pro)
                     <div class="col-md-4">
                         <div class="card-deck">
                             <div class="card">
-                                <img src="images/casa 1.jpg" alt="" class="card-image-top" width="100%" heigh="100%">
+                                <img src="images/house.jpg" alt="" class="card-image-top" width="100%" heigh="100%">
                                 <div class="card-body">
-                                    <h5>{{$project -> Project_name}}</h5>
-                                    <p>{{$project -> Description}}</p>
+                                    <h5>{{$pro -> Project_name}}</h5>
+                                    <p>{{$pro -> Description}}</p>
                                     <button type="button" class="btn btn-secondary">Project Information</button>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                     <br>
                     <div class="row no-gutters">
                         <div class="col-md-6">
-                            <img class="card-img" src="images/arquitecto.jpg" alt="" width="100%" height="100%">
+                            <img class="card-img" src="images/faces/face5.jpg" alt="" width="100%" height="100%">
                         </div>
                         <div class="col-md-6">
                             <div class="card-body">

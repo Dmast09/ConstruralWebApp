@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'ProjectController@home')->name('home');
 
 Auth::routes();
 
@@ -52,3 +50,5 @@ Route::post('/admin/projects/edit/{id}','ProjectController@update')->name('proje
 // Workers  Routes 
 
 Route::get('/admin/workers/index' ,'WorkerController@index')->name('workerindex');
+
+Route::get('/admin/workers/list', 'WorkerController@list')->name('workerlist');
