@@ -28,16 +28,18 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-3">
-                                <a href="#" class="btn btn-warning btn-sm">Edit</a>
+                                <a href="#" class="btn btn-secondary btn-sm">Profile</a>
                                 </div>
                                 <div class="col-sm-3">
-                                <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                                <a href="#" class="btn btn-warning btn-sm">Edit</a>
                                 </div>
+                                
                                 <div class="col-sm-3">
                                 <a href="#" class="btn btn-secondary btn-sm">Details</a>
                                 </div>
+                                
                                 <div class="col-sm-3">
-                                <a href="#" class="btn btn-secondary btn-sm">Profile</a>
+                                <a href="#" class="btn btn-danger btn-sm">Delete</a>
                                 </div>
                             </div>
                         </div>

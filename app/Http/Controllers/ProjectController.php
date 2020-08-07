@@ -89,4 +89,16 @@ class ProjectController extends Controller
     
     
     }
+
+    public function prueba(){
+        $collection = (new MongoDB\Client)->Construral->projects;
+        $collection2 = (new MongoDB\Client)->Construral->workers;
+        $projects = $collection->find();
+        $workers = $collection2->find();
+        return view('.prueba',['projects' => $projects],['workers'=>$workers]);
+
+
+    }
+
+    
 }

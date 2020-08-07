@@ -52,3 +52,12 @@ Route::post('/admin/projects/edit/{id}','ProjectController@update')->name('proje
 Route::get('/admin/workers/index' ,'WorkerController@index')->name('workerindex');
 
 Route::get('/admin/workers/list', 'WorkerController@list')->name('workerlist');
+
+
+
+// Ruta prueba
+
+Route::get('/prueba', 'ProjectController@prueba');
+
+
+

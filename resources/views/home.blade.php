@@ -31,7 +31,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="images/casa3.jpg" alt="Second slide" width="620" height="480">
+                            <img class="d-block w-100" src="images/house.jpg" alt="Second slide" width="620" height="480">
                         </div>
 
                     </div>
